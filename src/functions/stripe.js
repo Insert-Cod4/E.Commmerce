@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const createPaymentIntent = (authtoken, coupon) =>
     axios.post(
-        `${'http://localhost:8000/api'}/create-payment-intent`,
+        `${'https://boiling-refuge-53142.herokuapp.com/api'}/create-payment-intent`,
         { couponApplied: coupon },
         {
 

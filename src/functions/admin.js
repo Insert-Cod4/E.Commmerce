@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getOrders = async (authtoken) =>
-    await axios.get(`${'http://localhost:8000/api'}/admin/orders`,
+    await axios.get(`${'https://boiling-refuge-53142.herokuapp.com/api'}/admin/orders`,
         {
             headers: {
                 authtoken,
@@ -9,7 +9,7 @@ export const getOrders = async (authtoken) =>
         });
 
 export const changeStatus = async (orderId, orderStatus, authtoken) =>
-    await axios.put(`${'http://localhost:8000/api'}/admin/order-status`,
+    await axios.put(`${'https://boiling-refuge-53142.herokuapp.com/api'}/admin/order-status`,
         { orderId, orderStatus },
         {
             headers: {
